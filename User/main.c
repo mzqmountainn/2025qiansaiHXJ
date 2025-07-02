@@ -598,7 +598,7 @@ static void CI_entry(void* parameter){
     if(ifFirstEnter && count>=8){
       ifFirstEnter = 0;
       // Usart_SendString8266(USART2, "AT+CIPSTART=\"TCP\",\"192.168.218.60\",1111\r\n");
-      rt_device_write(serial, 0, "AT+CIPSTART=\"TCP\",\"192.168.240.60\",1111\r\n", 41); 
+      rt_device_write(serial, 0, "AT+CIPSTART=\"TCP\",\"192.168.10.100\",1111\r\n", 41); 
       a = 1;
       count = 0;
 
